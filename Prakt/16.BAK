@@ -1,0 +1,39 @@
+#include<iostream.h>
+#include<math.h>
+#include<conio.h>
+#include<string.h>
+#include<stdio.h>
+#include<ctype.h>
+#include<stdlib.h>
+#include<iomanip.h>
+struct fam
+	{
+	char f[80];
+	int g;
+	};
+void main()
+	{
+	clrscr();
+
+	int i,x=0;
+	char *s=new char[80];
+	fam a[3];
+
+		for (i=0; i<3; i++)
+			{
+			cout<<"Vvedite familuu: ";
+			cin>>a[i].f;
+			cout<<"Vvedite god: ";
+			cin>>a[i].g;
+			cout<<endl;
+			}
+		cout<<"Vvedite familiy: ";
+		cin>>s;
+		for (i=0; i<3; i++)
+			if (strcmp(s,a[i].f)==0) x=a[i].g;
+		cout<<endl;
+		cout<<x;
+
+
+	getch();
+	}
